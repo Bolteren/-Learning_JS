@@ -1,11 +1,4 @@
-const income = 100;
-const strIncome = "100";
-
-const result = income == strIncome;
-
-console.log(`Значение сравнения числа и строки ${result}` );
-
-const result2 = income === strIncome;
-
-console.log(`Значение сравнения числа и строки и типа переменных ${result2}`);
-
+// Условные конструкции
+const age = 22;
+age <= 17 && console.log("Вам меньшу 18 лет. Доступ закрыт.");
+age > 17 && console.log("Вам больше 17 лет. Доступ открыт");

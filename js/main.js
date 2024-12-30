@@ -42,3 +42,30 @@ let e1 = false;
 let f1 = false;
 e1 ||= f1;
 console.log(`Ложь или ложь = ${e1}`);
+
+// Тернарный оператор
+const a2 = 1;
+const b2 = 2;
+const result = a2 > b2 ? a2 + b2 : a2 - b2;
+console.log(`Тернарный оператор равен ${result}`);
+console.log("Оператор \n\n\n\n");
+//Проверка на null и undefined
+const result2 = "hello" ?? "world";
+console.log(result2);
+console.log(0 ?? 5);
+console.log("" ?? "javaScript");
+console.log(false ?? true);
+console.log(null ?? "not null");
+console.log(undefined ?? "defined");
+console.log(null ?? null);
+console.log(undefined ?? undefined);
+
+//Оператор ??=
+console.log("\nОператор ??=");
+const message = "Hello JS";
+let text = null;
+text ??= message;
+console.log(`Оператор ??= ${text}`);
+text = "Hello Work";
+text ??= message;
+console.log(`Оператор ??= ${text}`);

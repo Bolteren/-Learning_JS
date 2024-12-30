@@ -1,16 +1,11 @@
-const x = 45;
-const y = 123.897;
-const z = -0.123;
+const income = 100;
+const strIncome = "100";
 
-const num1 = 0b1011;
+const result = income == strIncome;
 
-const num2 = 0o11;
-const num3 = 0xff;
-const num4 = 123_4567;
-console.log(x);
-console.log(y);
-console.log(z);
-console.log(num1);
-console.log(num2);
-console.log(num3);
-console.log(num4);
+console.log(`Значение сравнения числа и строки ${result}` );
+
+const result2 = income === strIncome;
+
+console.log(`Значение сравнения числа и строки и типа переменных ${result2}`);
+

@@ -1,35 +1,27 @@
-//copy Object
-//var1
-const person = {
-  name:'Bob',
-  age: 25,
-  vlog: {
-    vlogToYou: true,
-    vlogToDiscord: false
-  }
+//function
+
+let a = 5
+let b = 3
+
+function sum (a, b) {
+  const c = a + b
+  console.log(c)
 }
 
-const person2 = Object.assign({}, person)//не работает со вложенными объектами
-person2.age = 26
+sum(a, b)
+a = 8
+b = 12
+sum(a, b)
 
-globalThis.console.log(person2.age)
-globalThis.console.log(person.age)
+function myFn (d, e){
+  let f
+  d++
+  console.log('\n\n\n')
+  console.log(d)
+  f = d + e
+  return f
+}
 
-//var2
-//разделение объекта на свойства
-//не работает со вложенными объектами
-const person3 = { ...person}
-person3.name = 'Alice'
-person3.vlog.vlogToDiscord = true
-globalThis.console.log(person3.vlog.vlogToDiscord)
-globalThis.console.log(person.vlog.vlogToDiscord)
+console.log(myFn(22, 5))
 
-//var3
-//Через JSON
-//Работает со вложениями объектов
-
-const person4 = JSON.parse(JSON.stringify(person))
-person4.name = 'Sergay'
-person4.vlog.vlogToYou = false
-globalThis.console.log(person4.vlog.vlogToYou)
-globalThis.console.log(person.vlog.vlogToYou)
+//console.dir(myFn)

@@ -1,9 +1,18 @@
-const objectA = {
-  a: 10,
-  b: true
-};
+function a()
+{
+  console.log("This is function\n");
+}
+a();
+//a = 10;
+//a();
 
-const coppyOfA = objectA;
-coppyOfA.c = 'abc';
-objectA.a = 20;
-console.log('text = ' + objectA.c + ' - a = ' + objectA.a);
+//использовать const везде где возможно
+
+//стрелочная функция
+const b = () => {
+  console.log('Стрелочная функция');
+}
+
+b();
+//b = 10; //выдаст ошибку
+
